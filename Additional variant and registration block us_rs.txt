@@ -1,0 +1,29 @@
+// US English with spesial Serbian latin symbols as ralt switch
+// For input latin Serbian symbols with US keyboard layout
+// Dream Theme
+// 2024-11-09
+partial alphanumeric_keys
+xkb_symbols "us_rs" {
+
+    include "us"
+    name[Group1]="English with Serbian symbols (US keyboard)";
+
+    key <AB01>	{ [         z,          Z,     U+017E,	     U+017D   ]	}; // z, Z, ž, Ž
+    key <AB02>	{ [         x,          X,     U+0107,       U+0106   ]	}; // x, X, ć, Ć
+    key <AB03>	{ [         c,          C,     U+010D,       U+010C   ]	}; // c, C, č, Č
+    key <AB06>	{ [         n,          N,     U+01CC,	     U+01CB   ]	}; // n, N, nj, Nj
+    key <AC02>	{ [         s,          S,     U+0161,       U+0160   ]	}; // s, S, š, Š
+    key <AC03>	{ [         d,          D,     U+0111,	     U+0110   ]	}; // d, D, đ, Đ
+    key <AC04>	{ [         f,          F,     U+01C6,	     U+01C5   ]	}; // f, F, dž, Dž
+    key <AC09>  { [         l,          L,     U+01C9,       U+01C8   ] }; // l, L, lj, Lj
+
+    include "level3(ralt_switch)"
+};
+
+
+<variant>
+          <configItem>
+            <name>us_rs</name>
+            <description>English with Serbian latin ralt(US, us_rs)</description>
+          </configItem>
+</variant>
