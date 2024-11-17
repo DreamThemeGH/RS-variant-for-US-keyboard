@@ -10,7 +10,7 @@ the keyboard may partially not work after reboot.
 
 New versions of the layout and registration files can be replaced completely, or existing ones can be edited.</br>
 You can change the default layout settings manually:
-1. You need to add a new variant to the US layout file <b>/usr/share/X11/xkb/symbols/US</b>
+1. You need to add a new variant to the US layout file <b>/usr/share/X11/xkb/symbols/us</b>
 ![Add new variant of US layout](https://github.com/user-attachments/assets/2cf6604a-371e-46f1-acae-29c30f9994bc)
 2. You need to register the new variant in <b>/usr/share/X11/xkb/rules/evdev.xml</b>
 ![Registration of a new keyboard layout variant](https://github.com/user-attachments/assets/eadb1a69-8d4c-4ea2-8527-87b6462230c4)
